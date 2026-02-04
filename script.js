@@ -5,7 +5,7 @@ const mainTxt = document.querySelector('.container h1');
 const subTxt = document.querySelector('.container p');
 const byButton = document.querySelector('.yesButton');
 
-const sadImageSrc = ["image/angry.gif", "image/sobs.webp","image/sad.gif", "image/cry.webp", "image/doorPunch.webp"];
+const sadImageSrc = ["image/angry.gif", "image/sobs.webp","image/sad.gif", "image/cry.webp"];
 let count = 0;
 
 //function to change sad image every 3 noBtn clicks
