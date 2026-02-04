@@ -4,7 +4,7 @@ const image = document.querySelector('.ask');
 const mainTxt = document.querySelector('.container h1');
 const subTxt = document.querySelector('.container p');
 
-const sadImageSrc = ["/image/angry.gif", "/image/sobs.webp","/image/sad.gif", "/image/cry.webp", "/image/doorPunch.webp"];
+const sadImageSrc = ["image/angry.gif", "image/sobs.webp","image/sad.gif", "image/cry.webp", "image/doorPunch.webp"];
 let count = 0;
 
 //function to change sad image every 3 noBtn clicks
@@ -48,7 +48,7 @@ noButton.addEventListener('click', () => {
 })
 //yes button event listener
 yesButton.addEventListener('click', () => {
-    image.src = "/image/both.webp";
+    image.src = "image/both.webp";
     mainTxt.textContent = "I LOVE YOU! MWAHHH!";
     subTxt.textContent = "Thank you Babuuuuuuu!";
     yesButton.style.display = 'none';
