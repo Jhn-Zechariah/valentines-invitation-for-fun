@@ -59,9 +59,9 @@ function yesButtonClicked() {
         yesButton.textContent = "Close"; 
 
         confetti({
-            particleCount: 1000,
-            spread: 200,
-            origin: { y: 0.6 }
+            particleCount: 2500,
+            spread: 140,
+            origin: { y: 0.5 }
         });
 
     }else if(yesButton.textContent === "Close"){
