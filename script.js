@@ -51,7 +51,19 @@ function yesButtonClicked() {
         subTxt.textContent = "Thank you Babuuuuuuu!";
         noButton.style.display = 'none';
 
+        //back to original state
+        yesButton.style.width = "";
+        yesButton.style.height = "";
+        yesButton.style.fontSize = "";
+
         yesButton.textContent = "Close"; 
+
+        confetti({
+            particleCount: 1000,
+            spread: 200,
+            origin: { y: 0.6 }
+        });
+
     }else if(yesButton.textContent === "Close"){
         window.location.reload(); 
     }   
@@ -59,5 +71,6 @@ function yesButtonClicked() {
 }
 //yes button event listener
 yesButton.addEventListener('click', () => {
-   yesButtonClicked();  
+   yesButtonClicked(); 
+   
 })
