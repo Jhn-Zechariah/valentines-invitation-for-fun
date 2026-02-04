@@ -9,8 +9,8 @@ let count = 0;
 
 //function to change sad image every 3 noBtn clicks
 function changeSadImage() {
-    image.src = sadImageSrc[count];
     count = (count + 1) % sadImageSrc.length;
+    image.src = sadImageSrc[count];
 }
 //function to move button
 function moveButton() {
