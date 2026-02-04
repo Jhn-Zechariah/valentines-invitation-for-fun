@@ -3,6 +3,7 @@ const yesButton = document.getElementById('yesBtn');
 const image = document.querySelector('.ask');
 const mainTxt = document.querySelector('.container h1');
 const subTxt = document.querySelector('.container p');
+const byButton = document.querySelector('.yesButton');
 
 const sadImageSrc = ["image/angry.gif", "image/sobs.webp","image/sad.gif", "image/cry.webp", "image/doorPunch.webp"];
 let count = 0;
@@ -43,11 +44,20 @@ noButton.addEventListener('click', () => {
     shrinkNoButton();
     changeSadImage();
 })
+function yesButtonClicked() {
+    if(yesButton.textContent === "Yes") {
+        image.src = "image/both.webp";
+        mainTxt.textContent = "I LOVE YOU! MWAHHH!";
+        subTxt.textContent = "Thank you Babuuuuuuu!";
+        noButton.style.display = 'none';
+
+        yesButton.textContent = "Close"; 
+    }else if(yesButton.textContent === "Close"){
+        window.location.reload(); 
+    }   
+      
+}
 //yes button event listener
 yesButton.addEventListener('click', () => {
-    image.src = "image/both.webp";
-    mainTxt.textContent = "I LOVE YOU! MWAHHH!";
-    subTxt.textContent = "Thank you Babuuuuuuu!";
-    yesButton.style.display = 'none';
-    noButton.style.display = 'none';
+   yesButtonClicked();  
 })
