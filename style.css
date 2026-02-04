@@ -1,0 +1,106 @@
+/*MAIN CONTAINER*/
+.container {
+    text-align: center;
+    margin: 5% 5% 50px;
+    font-family: 'Arial', sans-serif;
+    color: #ff69b4;
+    background-color: #f8e7f0;
+    padding: 20px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    border: 8px solid #DC143C;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*IMAGE / GIF*/
+.ask {
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+/*TITLE*/
+.container h1 {
+    font-size: clamp(2.8rem, 6vw, 5.5rem);
+    margin: 0 0 10px;
+    background: linear-gradient(#DC143C, #f56060);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "DynaPuff", system-ui;
+    font-weight: 800;
+}
+
+/* TEXT*/
+.container p {
+    font-size: clamp(1.1rem, 3.5vw, 1.5rem);
+    margin: 0 0 20px;
+    background: linear-gradient(#DC143C, #f56060);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Boldonse", system-ui;
+}
+
+/*BUTTON WRAPPER*/
+.buttons {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/*BUTTONS*/
+#yesBtn,
+#noBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: #ff69b4;
+    border: none;
+    color: white;
+    padding: 16px 45px;
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
+    border-radius: 14px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.25s ease;
+    box-shadow: 0 0 8px #ff69b4;
+
+    white-space: nowrap; 
+}
+
+/* Hover / Tap Effects */
+#yesBtn:hover,
+#noBtn:hover {
+    background-color: #DC143C;
+    box-shadow: 0 0 12px #DC143C;
+    transform: scale(1.05);
+}
+
+/*MOBILE OPTIMIZATION*/
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 15px 30px;
+        border-width: 6px;
+    }
+
+    .buttons {
+        gap: 20px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #yesBtn,
+    #noBtn {
+        width: 100%;
+        max-width: 280px;
+    }
+}
